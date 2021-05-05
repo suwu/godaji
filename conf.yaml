@@ -1,0 +1,13 @@
+server:
+  ip: localhost
+  port: 8080
+log: 
+  stdout: true
+  encoder: consoleEncoder
+  level: debug
+  filename: ./oa.log
+  maxsize: 100
+  maxage: 0
+  maxbackups: 0
+  localtime: false
+  compress: true

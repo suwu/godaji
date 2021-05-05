@@ -1,0 +1,10 @@
+server:
+  ip:
+  port:
+log:
+  filename:
+  maxsize:
+  maxage:
+  maxbackups:
+  localtime:
+  compress:

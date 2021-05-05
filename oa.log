@@ -1,0 +1,12 @@
+{"level":"DEBUG","ts":"2021-05-04T16:19:39.235+0800","caller":"log/log.go:75","msg":"debug message"}
+{"level":"INFO","ts":"2021-05-04T16:19:39.236+0800","caller":"log/log.go:87","msg":"info message, v: hello log"}
+2021-05-04T16:21:03.769+0800	DEBUG	log/log.go:75	debug message
+2021-05-04T16:21:03.770+0800	INFO	log/log.go:87	info message, v: hello log
+2021-05-04T16:36:05.419+0800	DEBUG	log/log.go:86	debug message
+2021-05-04T16:36:05.420+0800	INFO	log/log.go:98	info message, v: hello log
+2021-05-04T16:36:43.049+0800	DEBUG	log/log.go:86	debug message
+2021-05-04T16:36:43.050+0800	INFO	log/log.go:98	info message, v: hello log
+2021-05-04T16:36:50.876+0800	DEBUG	log/log.go:86	debug message
+2021-05-04T16:36:50.877+0800	INFO	log/log.go:98	info message, v: hello log
+{"level":"DEBUG","ts":"2021-05-04T16:37:07.951+0800","caller":"log/log.go:86","msg":"debug message"}
+{"level":"INFO","ts":"2021-05-04T16:37:07.952+0800","caller":"log/log.go:98","msg":"info message, v: hello log"}
