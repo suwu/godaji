@@ -1,8 +1,8 @@
 package main
 
 import (
-	"mitaitech.com/oa/pkg/config"
-	"mitaitech.com/oa/pkg/log"
+	"mitaitech.com/oa/pkg/common/config"
+	"mitaitech.com/oa/pkg/common/log"
 )
 
 func main() {

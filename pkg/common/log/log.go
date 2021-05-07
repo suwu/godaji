@@ -5,11 +5,11 @@ import (
 	"os"
 	"strings"
 
-	"mitaitech.com/oa/pkg/config"
-
 	"github.com/natefinch/lumberjack"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
+
+	"mitaitech.com/oa/pkg/common/config"
 )
 
 var sugarLogger *zap.SugaredLogger

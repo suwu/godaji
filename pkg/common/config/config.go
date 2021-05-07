@@ -11,6 +11,13 @@ type Config struct {
 	IP   string
 	Port int
 
+	DBType         string
+	DBDSN          string
+	DBMaxIdleConns int
+	DBMaxOpenConns int
+	DBAutoMigrate  bool
+	DBDebug        bool
+
 	LogStdout     bool
 	LogEncoder    string
 	LogLevel      string
@@ -51,4 +58,12 @@ func InitConfig() {
 	config.LogMaxBackups = archaius.GetInt("log.maxbackups", 0)
 	config.LogLocalTime = archaius.GetBool("log.localtime", false)
 	config.LogCompress = archaius.GetBool("log.compress", true)
+
+	config.DBType = archaius.GetString("db.type", "sqlite")
+	config.DBDSN = archaius.GetString("db.dsn", "demo.db")
+	config.DBMaxIdleConns = archaius.GetInt("db.maxIdleConns", 10)
+	config.DBMaxOpenConns = archaius.GetInt("db.maxOpenConns", 100)
+	config.DBAutoMigrate = archaius.GetBool("db.autoMigrate", true)
+	config.DBDebug = archaius.GetBool("db.password", false)
+
 }
