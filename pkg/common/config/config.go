@@ -8,6 +8,8 @@ import (
 )
 
 type Config struct {
+	EncryptKey string
+
 	IP   string
 	Port int
 
@@ -45,6 +47,7 @@ func InitConfig() {
 	if err != nil {
 		log.Fatalln("Init config error:" + err.Error())
 	}
+	config.EncryptKey = archaius.GetString("base.encryptKey", "change_me")
 
 	config.IP = archaius.GetString("server.ip", "localhost")
 	config.Port = archaius.GetInt("server.port", 8080)

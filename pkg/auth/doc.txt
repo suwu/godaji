@@ -4,6 +4,13 @@ auth
 认证
 实现对用户名、电话、邮箱地址的认证
 
+模型：
+id
+username
+password
+tel
+
+
 
 鉴权
 

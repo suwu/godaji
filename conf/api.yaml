@@ -1,0 +1,35 @@
+name: api
+path: api
+config: 
+  con1: value1
+filters:
+  - name: filter1
+party:
+  - name: sub
+    path: sub
+    config: 
+      con2: value2
+    filters:
+      - name: filter2
+    party: []
+Interfaces: 
+  - name: inter1
+    method: GET
+    path: users
+    strategy: default
+    handler: handler
+    config: 
+      con3: value3
+    query_string_validator: validator
+    body_validator: validator2
+    response:
+      name: resp1
+      header: 
+        head1: value1
+      cookie:
+        cook1: value1
+      when: true
+      delay: 10
+      status: 200
+      body: body
+

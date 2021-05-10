@@ -1,4 +1,4 @@
-package db
+package dbcore
 
 import (
 	"context"
